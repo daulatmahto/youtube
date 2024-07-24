@@ -176,7 +176,7 @@ gap: 2vw;
 }
 
 .navbar .container .row  .naihati .nav-menu ul li a:hover{
-background-image: url(../img/humming-bird.png);
+background-image: url(./img/humming-bird.webp);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
