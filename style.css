@@ -1479,7 +1479,7 @@ text-align: center;
      .caption .container #luna .encyclopedia{
         width: 48%;
         height: 680px;
-        background-image: url(/img/bit-3.webp);
+        background-image: url(./img/bit-3.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
