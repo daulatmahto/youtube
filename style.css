@@ -59,12 +59,12 @@
 
 @font-face {
     font-family:"Roxborough" ;
-    src: url(/Fonts/Roxborough\ CF.ttf);
+    src: url(/Fonts/Roxborough\ CF.woff2);
 }
 
 @font-face {
     font-family: "visbycf";
-    src: url(/Fonts/Fontspring-DEMO-visbycf-bold.otf);
+    src: url(/Fonts/Fontspring-DEMO-visbycf-bold.woff2);
 }
 
 
@@ -830,7 +830,7 @@ text-align: center;
     height: auto;
     width: 100%;
     padding: 30px 0;
-    background-image: url(/img/parallex\ image.jpg);
+    background-image: url(/img/parallex\ image.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -1478,8 +1478,8 @@ text-align: center;
 
      .caption .container #luna .encyclopedia{
         width: 48%;
-        height: 660px;
-        background-image: url(/img/bit-3.jpg);
+        height: 680px;
+        background-image: url(/img/bit-3.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1493,7 +1493,7 @@ text-align: center;
      }
      
      .caption .container #luna .cheflin{
-        height: 660px;
+        height: 680px;
         width: 48%;
         box-shadow: 0 2px 6px gray;
         padding: 30px;
@@ -2119,6 +2119,4 @@ margin-top: 10px;
 .foot-top .container #i30 img{
     color: #FFFFFF;
     width: 50%;
-    height: auto;
 }
-

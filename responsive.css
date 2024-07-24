@@ -170,6 +170,43 @@
         margin-bottom: 20px;
     }
 
+    .caption .container #luna .cheflin ul .citizen{
+        font-size: 3vw;
+        font-family: var(--Roxborough--);
+        color: rgb(5, 5, 95);
+   
+    }
+
+    .caption .container #luna .cheflin p{
+        font-size: 2vw;
+    }
+
+    .caption .container #luna .cheflin ul li{
+        font-size: 2vw;
+    }
+
+
+    .caption .container #luna .cheflin{
+        height: 700px;
+        width: 48%;
+        box-shadow: 0 2px 6px gray;
+        padding: 30px;
+        background-color:#FFFFFF;
+        transition: all 0.5s ease;
+     }
+
+     .caption .container #luna .encyclopedia{
+        width: 48%;
+        height: 700px;
+        background-image: url(/img/bit-3.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all 0.5s ease;
+
+     }
+
+
 
     .contact-us .container #i25{
         height: auto;
@@ -179,7 +216,11 @@
     .foot-top{
         width: 100%;
         height: auto;
-    }    
+    }  
+
+
+    
+    
     
 }
 
@@ -412,6 +453,11 @@
 
      }
 
+     .caption .container #luna .cheflin .flow{
+        text-align: center;
+        margin-top: 50px;
+    }
+
 
      .caption .container #luna .encyclopedia{
         height: 900px !important;
@@ -426,7 +472,6 @@
 
      .caption .container #luna .cheflin  ul li{
         font-size: 18px !important;
-        font-family: var(--Dmsanshead-1--);
         font-weight: 400;
      }
 
@@ -435,7 +480,11 @@
         color: gray;
         font-weight: 650;
         font-size: 18px !important;
-        font-family: var(--Dmsanshead-1--);
+        margin-top: 20px !important;
+    }
+
+    .caption .container #luna .cheflin ul li{
+        line-height: 1.2;
     }
 
     .caption .container #luna .cheflin  ul .pollywood{
@@ -443,19 +492,16 @@
         color: rgb(6, 6, 15);
         font-weight: 700;
         font-size: 20px !important;
-        font-family: var(--Dmsanshead-1--);
     }
 
     .caption .container #luna .cheflin h1{
         font-size: 28px !important;
         text-align: center;
         margin-bottom: 10px;
-        font-family: var(--montserrathead-2--);
     }
 
  .caption .container #luna .cheflin p{
         font-size: 18px !important;
-        font-family: var(--opensanspara2--);
         font-weight: 400;
         text-align: center;
     }
@@ -466,13 +512,11 @@
 
 .caption .container #luna .cheflin ul .citizen{
         font-size: 24px !important;
-        font-family: var(--Dmsanshead-1--);
     }
 
 .caption .container #luna .cheflin ul li{
         list-style: none;
         font-size: 15px;
-        font-family: var(--opensanspara2--);
         font-weight: 400;
     }
 
@@ -990,7 +1034,6 @@
 @media screen and (max-width:412px) {
     .caption .container #luna .cheflin ul .citizen{
         font-size: 18px !important;
-        font-family: var(--Dmsanshead-1--);
         color: rgb(5, 5, 95);
     }
 
@@ -999,7 +1042,6 @@
         color: gray;
         font-weight: 650;
         font-size: 14px !important;
-        font-family: var(--Dmsanshead-1--);
     }
 
     .caption .container #luna .cheflin  ul .pollywood{
@@ -1007,7 +1049,6 @@
         color: rgb(6, 6, 15);
         font-weight: 700;
         font-size: 18px !important;
-        font-family: var(--Dmsanshead-1--);
     }
 
 
@@ -1018,7 +1059,6 @@
     .caption .container #luna .cheflin ul li{
         list-style: none;
         font-size: 16px !important;
-        font-family: var(--opensanspara2--);
         font-weight: 400;
     }
 
@@ -1031,7 +1071,7 @@
 .caption .container #luna .encyclopedia{
     width: 48%;
     height: 600px;
-    background-image: url(/img/bit-3.jpg);
+    background-image: url(/img/bit-3.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center !important;
