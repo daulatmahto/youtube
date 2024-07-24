@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- ************************AOS CSS cdn link***************************************** -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./CSS/style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <title>BOOK SELLERS</title>
+
+    <link
+    rel="shortcut icon"
+    href="/FAVICON.png"
+    type="image/x-icon"
+         />
+
+    
+</head>
+<body>
+    <header class="header">
+        <section class="navbar" id="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="naihati">
+                        <div class="logo">
+                      <img src="/img/logo.png" alt="" style="width: 150px; height: 100px;">
+                          
+                           </div>
+       
+                           <div class="nav-menu">
+                           <ul >
+                               <li><a href="#Home" class="active nav-link">HOME</a></li>
+                               <li><a href="#Featured" class="nav-link">FEATURED</a></li>
+                               <div class="dropdown ">
+                                <button class="dropbtn">DROPDOWN</button >
+                                <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                </div>
+                              </div>
+                               
+                              
+                               <li class="trunk"><a href="#Galleries" class="nav-link">GALLERIES</a></li>
+                               <li><a href="#Testimonial" class="nav-link">TESTIMONIAL</a></li>
+                               <li class="tree"><a href="#About Us" class="nav-link">ABOUT US</a></li>
+                               <li><a href="#Contact" class="nav-link">CONTACT US</a></li>
+                           </ul>
+                           </div>
+       
+                           <div class="login">
+                            <li class="chillax" ><i class="fa-solid fa-user-tag"></i></li>
+                            <li class="san-serif" ><i class="fa-solid fa-heart"></i></li>
+                            <li class="chillax"><i class="fa-solid fa-cart-shopping"></i></li>
+                               <li  id="bars"> <i class="fa-solid fa-bars ico-bars"></i></li>
+                              
+                           </div>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+          $(document).ready(function(){
+            $("li .ico-bars").click(function(){
+              $(this).toggleClass("fa-x");
+              $("ul").toggleClass("active");
+             
+            });
+          });
+    
+         
+        </script>  
+    
+    </header>
+
+    <main>
+
+
+
+<section class="banner" id="Home">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper ">
+
+      <div class="swiper-slide" id="BB" >
+        <div class="slider-img">
+          <img src="/img/banner1.jpg" alt="">
+          <div class="context-1">
+            <h1>Whispers of the Forgotten</h1>
+            <h3>Author : Rick Roidson's </h3>
+            <p>A gripping tale of Mystery and suspense, "Whispers of the Forgotten" delves into the dark secrets of a small town, uncovering hidden truths that challenge the protagonist's peception of reality.</p>
+           <div class="shop">
+            <button>Shop Now</button>
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide"  id="CC">
+        <div class="slider-img">
+          <img src="/img/banner2.jpg" alt="">
+          <div class="context-2">
+            <h1>Echoes of Time</h1>
+            <h3>Author : Rick Roidson's </h3>
+            <p>In the historical fiction masterpiece, Roidson transports readers through different eras, weaving a narrative that connects the past with the present in a poignant and unforgettable way.</p>
+            <div class="shop">
+              <button>Shop Now</button>
+             </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="swiper-slide"  id="DD">
+        <div class="slider-img">
+          <img src="/img/banner3.jpg" alt="">
+          <div class="context-3">
+            <h1>The Last Sanctury</h1>
+            <h3>Author : Rick Roidson's </h3>
+            <p>A dystopian novel that paints a haunting picture of a future society, "The Last Sanctury" is a powerful commentary on environmental degratiion, technological advancement, and the enduring human spirit.</p>
+            <div class="shop">
+              <button>Shop Now</button>
+             </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+          <div class="swiper-button-next">
+      <i class="fa-solid fa-chevron-right"></i>
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+
+   
+          <div class="swiper-pagination"></div>
+  </div>
+  </section>
+
+    
+
+
+ 
+  
+
+
+     <!-- ************************Bootstrap JS cdn link***************************************** -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+
+
+
+
+
+     <!-- Swiper JS cdn link -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 8000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+            });
+</script>
+<!--  End of Initializing Swiper -->
+
+
+
+  <section class="austria" id="Featured" >
+    <div class="container">
+      <div class="row" id="mig-20">
+        <div class="battle">
+          <h1>Featured Books</h1>
+          <p>It refers to a selection of books that are highlighted or recommended by bookstores, libraries, websites, book clubs or other literary organizations. These books are often chosen based on their anticipated popularity,critical acclaim, author reputation, or their thematic relevance to current eventsd or seasonal trends.</p>
+       </div>
+      </div>
+         
+      <div class="row" id="policy">
+       <div class="arrivals">
+         <h1>Arrivals Cards</h1>
+         <h2>See More <i class="fa-solid fa-arrow-right"></i></h2>
+       </div>
+      </div>
+
+      <div class="row" id="mig-21">
+          <div class="cover-one">
+              <div class="fir" >
+                  <img src="/img/the-jungle-book.jpg" alt="">
+
+                  <div class="pyramid">
+                      <h3>Title: THE JUNGLE BOOK</h3>
+                      <h4>Author: RUDYARD KIPLING</h4>
+                      <ul>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                      </ul>
+                      <div class="tri-1">
+                        <button>READ MORE</button>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+
+                <div class="cover-one">
+                    <div class="fir" >
+                        <img src="/img/einstein-1 (2).jpg" alt="">
+                        <div class="pyramid">
+                            <h3>Title: QUANTUM</h3>
+                            <h4>Author: MANJIT KUMAR</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                            </ul>
+                            <div class="tri-1">
+                              <button>READ MORE</button>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                <div class="cover-one">
+                  <div class="fir" >
+                    <img src="/img/einstein-1 (3).jpg" alt="">
+                      <div class="pyramid">
+                          <h3>Title: HEROES OF OLYMPUS</h3>
+                          <h4>Author: RICK RIORDAN</h4>
+                          <ul>
+                              <li><i class="fa-solid fa-star"></i></li>
+                              <li><i class="fa-solid fa-star"></i></li>
+                              <li><i class="fa-solid fa-star"></i></li>
+                              <li><i class="fa-solid fa-star"></i></li>
+                              <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                          </ul>
+                          <div class="tri-1">
+                            <button>READ MORE</button>
+                          </div>
+                      </div>
+                  
+                  </div>
+                  
+              </div>
+              <div class="cover-one">
+                <div class="fir">
+                    <img src="/img/einstein-1 (1).webp" alt="">
+                    <div class="pyramid">
+                        <h3>Title: THE COMEDY OF ERRORS</h3>
+                        <h4>Author: WILLIAM SHAKESPEARE</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                        </ul>
+                        <div class="tri-1">
+                          <button>READ MORE</button>
+                        </div>
+                    </div>
+                
+                </div>
+                
+            </div>
+      
+      </div>
+    </div>
+  </section>
+
+    
+        
+      
+<section class="grid" id="Galleries">
+    <div class="container">
+        <div class="row" id="i85">
+          <div class="gallery">
+            <h1>Galleries</h1>
+          </div>
+        </div>
+
+
+       <div class="row flip" id="i2024">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/img/house-1.jpg" alt="">
+              </div>
+              <div class="flip-card-back">
+                <h1>Mystery Best Sellers</h1>
+                <h2>Book: MAGIC TREE HOUSE</h2>
+                <strong>Author: MARY POPE OSBORNE</strong>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/img/house-4.jpg" alt="">
+              </div>
+              <div class="flip-card-back">
+                <h1>Non-Fiction Best Sellers</h1>
+                <h2>Book: AKBAR AND BIRBAL</h2>
+                <strong>Author: RUNGEEN SINGH</strong>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/img/house-3.jpg" alt="">
+              </div>
+              <div class="flip-card-back">
+                <h1>Non-Fiction Best Sellers</h1>
+                <h2>Book: TORTOISE AND THE MAGIC STICK</h2>
+                <strong>Author: ISAH AND JIMOH</strong>
+              </div>
+            </div>
+          
+        </div>
+
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/img/aladdin books.jpg" alt="">
+            </div>
+            <div class="flip-card-back">
+              <h1>Non-Fiction Best Sellers</h1>
+              <h2>Book: ALADIN</h2>
+              <strong>Author: BHAGWATI PRASAD MISHRA</strong>
+            </div>
+          </div>
+        
+      </div>
+</div>
+
+        <div class="row flip" id="i2025">
+     
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="/img/bit-1.jpg" alt="">
+          </div>
+          <div class="flip-card-back">
+            <h1>Non-Fiction Best Sellers</h1>
+            <h2>Book: THE BANQUET QUEEN</h2>
+            <strong>Author:DEVI CHOUDHRANI</strong>
+          </div>
+        </div>
+      </div>
+
+      
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="/img/bit-2.jpg" alt="">
+        </div>
+        <div class="flip-card-back">
+          <h1>Non-Fiction Best Sellers</h1>
+          <h2>Book: THE JUNGLE BOOK</h2>
+          <strong>Author: RUDYARD KIPLING</strong>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="/img/bit-4.jpg" alt="">
+        </div>
+        <div class="flip-card-back">
+          <h1>Non-Fiction Best Sellers</h1>
+          <h2>Book: BOUDHOTANTRA</h2>
+          <strong>Author: CHANAKYA</strong>
+        </div>
+      </div>
+    
+        </div>
+
+         
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="/img/olympus rick.jpg" alt="">
+        </div>
+        <div class="flip-card-back">
+          <h1>Sci-Fi Best Sellers</h1>
+          <h2>Book: HEROES OF OLYMPUS</h2>
+          <strong>Author: RICK RIORDAN</strong>
+        </div>
+      </div>
+    
+        </div>
+
+</div>
+
+
+        <div class="row flip" id="i2026">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                     <img src="/img/bit-5.jpg" alt="">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Mystery Best Sellers</h1>
+                        <h2>Book: CITY OF SORROWS</h2>
+                        <strong>Author:RARANATH TANTRIK</strong>
+                      </div>
+                    </div>
+                  </div>
+          
+                         
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="/img/bit-6.jpg" alt="">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Non-Fiction Best Sellers</h1>
+                        <h2>Book: DEVI CHOUDHRANI</h2>
+                        <strong>Author: CHANAKYA</strong>
+                      </div>
+                    </div>
+                  </div>
+          
+                        
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="/img/bit-7.jpg" alt="">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Fiction Best Sellers</h1>
+                        <h2>Book: PYRATES OF CARIBBEAN</h2>
+                        <strong>Author: RUDYARD KIPLING</strong>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="/img/war-1.jpg" alt="">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Mysrery Best Sellers</h1>
+                        <h2>Book: A NEW HISTORY OF WORLD WAR </h2>
+                        <strong>Author: STALIN'S WAR</strong>
+                      </div>
+                    </div>
+                  </div>
+        </div> 
+
+
+        
+    </div>
+</section>
+
+
+
+
+
+<section class="testimonial" id="Testimonial">
+  <div class="container">
+<div class="row" id="i998">
+<div class="debut">
+  <h1>Testimonial</h1>
+  <p>An expert review for a book seller project requires a more in-depth analysis and professional assessment. This type of review should cover various aspects of the book selling service with a critical eye, providing detailed insights and recommendations. Here's a guide on how to write an expert </p>
+</div>
+</div>
+
+    <div class="row" id="j999">
+      <div class="swip">
+        <div class="swiper-slide-1">
+          <div class="slider-img">
+            <img src="/img/rahabi-khan-eNafqf_0ZWQ-unsplash.jpg" alt="">
+            <div class="perspective">
+              <h1>Rahabi Khan</h1>
+              <h3>Literature</h3>
+              <ul>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+              </ul>
+            <p>The overall experience with this book seller was quite positive. The website is user-friendly, the book selection is extensive, and the prices are competitive. The ordering process was straightforward and efficient. The overall value is good</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="swiper-slide-2">
+          <div class="slider-img">
+            <img src="/img/pexels-vitalyagorbachev-11587698.jpg" alt="">
+            <div class="perspective">
+              <h1>Vitalya gorbachev</h1>
+              <h3>novelist</h3>
+              <ul>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+              </ul>
+            <p>Prices are generally competitive, with frequent discounts and promotions. While some books are priced slightly higher than other retailers, the overall value is good, especially with the added benefit of discounts for bulk purchases.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="swiper-slide-3">
+          <div class="slider-img">
+            <img src="/img/evgeniya-litovchenko--HyaX0k25o0-unsplash.jpg" alt="">
+            <div class="perspective">
+              <h1>Evgeniya litovchenko</h1>
+              <h3>poetist</h3>
+              <ul>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+              </ul>
+            <p>Shipping options are varied, including standard and expedited shipping. Delivery times are reasonable, but there were occasional delays. Packaging was secure, ensuring that books arrived in excellent condition.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+
+
+
+<section class="caption"  id="About Us">
+  <div class="container">
+    <div class="row" id="pioneer" >
+  <div class="exotic">
+  <h1>About Us</h1>
+  </div>
+    </div>
+
+    <div class="row" id="luna">
+      <div class="encyclopedia">
+
+      </div>
+
+
+
+     <div class="cheflin" >
+      <h1>About the topic</h1>
+      <p>Online book sellers are platforms that allow customers to purchase books via the internet. They offer a wide range of books, including physical copies, e-books, and audiobooks. These platforms often provide various features such as customer reviews, recommendations, and convenient delivery options. Here are somet of the most popular online book sellers and what makes each unique:</p>
+      <ul>
+        <li class="pvr"><strong class="citizen">Popular Online Book Sellers</strong></li>
+        <li class="pollywood">1.Amazon Books</li>
+        <li><strong class="fox">Overview:</strong> Amazon is one of the largest online retailers globally, offering an extensive selection of books in various formats.</li>
+        <li><strong class="fox">Features:</strong>extensive review system helps customers make informed decisions.</li>
+        <li class="pollywood">2. Barnes & Noble:</li>
+        <li><strong class="fox">Overview:</strong>A leading bookseller in the U.S., both online and with physical stores.</li>
+        <li><strong class="fox">Features:</strong> E-books and digital content available through Nook e-readers and apps.</li>
+         </ul>
+        <div class="flow">
+          <button>Explore</button>
+        </div>
+     </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="contact-us" id="Contact">
+    <div class="container">
+<div class="row" id="i24" >
+<div class="sealam">
+    <h1>Contact Us</h1>
+    <p>We're here to help! Whether you have questions, feedback, or need support, feel free to reach out to us.</p>
+</div>
+</div>
+        <div class="row" id="i25">
+            <div class="contact-left">
+             <div class="bon">
+                    <div class="bon-left">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div class="bon-right">
+                        <h2>Phone:</h2>
+                        <p>(123) 456-7890</p>
+                    </div>
+             </div>
+
+             <div class="sun">
+                    <div class="mail-left">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+
+                    <div class="mail-right">
+                        <h2>Email:</h2>
+                        <p>support@example.com</p>
+                    </div>
+             </div>
+                
+             <div class="syska">
+                    <div class="syska-left">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="syska-right">
+                        <h2>Address:</h2>
+                        <p>123 Main St, City, india</p>
+                    </div>
+             </div>
+
+             <div class="fiit-jee">
+                <div class="fiit-jee-left">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+
+                <div class="fiit-jee-right">
+                    <h2>Business Hours:</h2>
+                         <div class="world-cup">
+                            <li>Monday to Friday: 9 AM - 5 PM</li>
+                            <li>Saturday: 10 AM - 3PM</li>
+                            <li>Sunday: Closed</li>
+                        </div>
+                </div>
+             </div>
+
+             <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.21689636787!2d88.26495009182987!3d22.535564937666017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1719140250633!5m2!1sen!2sin" width="490" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+
+            </div>
+
+            <div class="contact-right">
+              <form action="">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Second Name">
+                <input type="text" placeholder="Your Email">
+                <input type="text" placeholder="Subject">
+               <textarea name="" id="" cols="30" rows="20">Message</textarea>
+            
+              </form>
+               <div class="rainbow">
+                  <button>Send Message</button>
+               </div>
+            
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+
+    <footer>
+        <section class="foot-top">
+            <div class="container">
+                <div class="row" id="i29">
+                    <div class="footer">
+                        <div class="bookseller">
+                            <h2>Book Seller</h2>
+                            <p>South city complex,375, Jadavpur, Kolkata West Bengal 700068, india</p>
+                            <div class="skip">
+                               <li><strong class="null">Phone:</strong> (123) 456-7890</li>
+                                <li><strong class="null">Email:</strong> daulatmahto1234@gmail.com</li>
+                            </div>
+                            <div class="icode">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+
+                            </div>
+                        </div>
+
+                        <div class="bookseller" id="rocky">
+                            <h2>Useful Links</h2>
+                            <ul>
+                                <li>Home</li>
+                                <li>About us</li>
+                                <li>Services</li>
+                                <li>Term and condition</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+
+                        <div class="bookseller" id="inspect">
+                            <h2>Our Services</h2>
+                            <ul>
+                                <li>Featured Books</li>
+                                <li>Explore by genre</li>
+                                <li>Best Sellers</li>
+                                <li>New arrivals Books</li>
+                            </ul>
+                        </div>
+
+                        <div class="bookseller" id="bombay">
+                            <h2>Newsletter Signup</h2>
+                            
+                               <span class="null">Sign up for our newsletter to get the latest updates on new releases,promations, and more</span> 
+                            
+                                <div class="associate">
+                                        <input type="text">
+                                        <div class="marikom">
+                                            <button>Subscribe</button>
+                                        </div>
+                                </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="i30" >
+                  <img src="/img/leak-removebg-preview.png" alt="">
+                  <hr>
+                  <h3>&Copy Copyright <strong>Bookseller</strong>All Rights Reserved Designed by <span>Daulatmahto</span></h3>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    
+    
+     
+</body>
+</html>
