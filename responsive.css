@@ -3,7 +3,6 @@
 @media screen and (max-width:1024px) {
 
     .navbar{
-        /* background-color:rgb(2, 31, 2); */
         width: 100% !important;
         height: 104px !important;
         backdrop-filter: blur(6px);
@@ -1071,7 +1070,7 @@
 .caption .container #luna .encyclopedia{
     width: 48%;
     height: 600px;
-    background-image: url(/img/bit-3.webp);
+    background-image: url(./img/bit-3.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center !important;
