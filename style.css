@@ -3234,11 +3234,17 @@ margin-top: 10px;
          height: 300px;
         right: -230%;
         width: 100%;
-        padding: 10px;
+        padding: 0px !important;
         border-radius: 5px;
         background-color: brown;
         transition: all 2s ease-in-out;
         z-index: 100;
+    }
+
+
+    .navbar .nav-menu ul li{
+        /* padding: 0px !important; */
+  height: 10% !important;
     }
 
 
@@ -3478,4 +3484,10 @@ min-width: 89px !important;
     }
         
     
+}
+
+@media screen and (max-width:280px) {
+    .dropdown .dropbtn {
+        font-size: 0.4rem !important;
+         }
 }
