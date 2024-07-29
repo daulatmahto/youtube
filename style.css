@@ -3205,6 +3205,21 @@ margin-top: 10px;
 
 }
 
+@media screen and (max-width:360px) {
+    .navbar .nav-menu ul{
+        padding: 0px !important;
+    }
+
+    .navbar .nav-menu ul li{
+        height: 10% !important;
+    }
+
+    .dropdown .dropbtn{
+        padding: 0 !important;
+      }
+      
+}
+
 @media screen and (max-width:350px) {
 
  #nav{
@@ -3243,8 +3258,7 @@ margin-top: 10px;
 
 
     .navbar .nav-menu ul li{
-        /* padding: 0px !important; */
-  height: 10% !important;
+      height: 10% !important;
     }
 
 
