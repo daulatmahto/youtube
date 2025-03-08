@@ -64,11 +64,44 @@
 
 @media screen and (max-width:991px) {
 
+    
+.navbar .container  .row  .naihati .login .fa-bars{
+    display: block;
+    transition: all 0.4s ease-in-out;
+
+    &.fa-xmark{
+        transform: rotate(180deg);
+    }
+}
+
+
+.navbar .container .row  .naihati .nav-menu .menu-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 70vh;
+    z-index: 100;
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    background-color: orange;
+    transition: all 0.4s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    &.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
 .dropdown {
     background-color:transparent !important;
     font-size: 0.8rem;
     margin-bottom:15px ;
-    padding: 0px 5px 5px 5px;
+    padding: 0px 5px 0 5px;
     border-radius: 10px;
     width: 100% !important;
     border-bottom:2px solid rgb(226, 71, 71);
@@ -77,10 +110,13 @@
 }
 
 
-.dropdown .dropbtn {
+  .navbar .dropbtn {
     font-size: 0.8rem;
-    background-color: brown !important;
-     }
+    background-color: orange !important;
+    padding: 0px 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    }
 
 .navbar .container .row{
     padding: 10px !important;
@@ -113,6 +149,9 @@
         align-items: center;
         }
 
+        .dropdown-content a{
+            padding: 0 0 !important;
+        }
 
     .dropdown-content {
         display: none;
@@ -194,19 +233,6 @@
         transition: all 0.5s ease;
      }
 
-     .caption .container #luna .encyclopedia{
-        width: 48%;
-        height: 700px;
-        background-image: url(/img/bit-3.webp);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: all 0.5s ease;
-
-     }
-
-
-
     .contact-us .container #i25{
         height: auto;
         width: 100%;
@@ -216,11 +242,7 @@
         width: 100%;
         height: auto;
     }  
-
-
-    
-    
-    
+   
 }
 
 @media screen and (max-width:767px) {
@@ -1005,6 +1027,17 @@
             align-items: center;
           }
 
+          .foot-top .container #i29 .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .foot-top .container #i29 .footer #rocky{
+            margin-top: 20px;
+          }
+
 
           .foot-top .container #i29 .footer .creativity .associate  input{
             width: 115px;
@@ -1016,10 +1049,7 @@
     
         .foot-top .container #i29 .footer .bookseller ul li{
             width: 100%;
-        }
-    
-    
-    
+        }    
 }
 
 @media screen and (max-width:414px) {
@@ -1087,6 +1117,29 @@
         
     }
 
+
+    .navbar .container .row  .naihati .nav-menu .menu-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 100px;
+        left: 0;
+        right: 0;
+        height: 90vh;
+        z-index: 100;
+        width: 100%;
+        padding-top: 50px;
+        position: absolute;
+        background-color: orange;
+        transition: all 0.4s ease-in-out;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    
+        &.active{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
     .dropdown-content {
         display: none;
         position: absolute;
@@ -1095,24 +1148,6 @@
         min-width: 90px !important;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
-    }
-
-    .navbar .nav-menu ul {
-        display: flex;  
-        flex-direction: column;
-        position: absolute;
-        justify-content: center !important;
-        align-items: center !important;
-        display: block !important;
-        top: 100px;
-         height: 300px;
-        right: -230%;
-        width: 100%;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: brown;
-        transition: all 2s ease-in-out;
-        z-index: 100;
     }
 
 
@@ -1148,7 +1183,7 @@
 
           
   .dropdown .dropbtn {
- font-size: 0.6rem;
+ font-size: 0.8rem;
   }
 
 
@@ -1157,6 +1192,12 @@ width: 100% !important;
 height: 104px !important;
 }
 
+
+.navbar .container .row  .naihati .nav-menu .menu-top{
+    padding-top: 0px;
+    height: 70vh;
+    top: 100px;
+}
 
 .navbar .container .row  .naihati .logo img{
 height: 100px !important;
@@ -1330,6 +1371,59 @@ min-width: 89px !important;
     align-items: center;
   }
 
+  .contact-us .container #i25 .contact-left .bon .bon-left{
+    margin-bottom: 15px;
+  }
+
+  .contact-us .container #i25 .contact-left .bon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+  }
+
+
+    
+  .contact-us .container #i25 .contact-left .fiit-jee .fiit-jee-left{
+    margin-bottom: 15px;
+  }
+
+  .contact-us .container #i25 .contact-left .fiit-jee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+  }
+
+
+  
+  .contact-us .container #i25 .contact-left .syska .syska-left{
+    margin-bottom: 15px;
+  }
+
+  .contact-us .container #i25 .contact-left .syska{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+  }
+
+
+  
+  .contact-us .container #i25 .contact-left .sun .mail-left{
+    margin-bottom: 15px;
+  }
+
+  .contact-us .container #i25 .contact-left .sun{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+  }
 
 
   .foot-top .container #i29 .footer .bookseller h2{
